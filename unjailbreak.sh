@@ -25,6 +25,9 @@ rm -rf /Applications/jjjj.app/
 rm -rf /Applications/Extender.app/
 rm -rf /Applications/GBA4iOS.app/
 rm -rf /Applications/Filza.app/
+rm -rf /Applications/iFile.app/
+rm -rf /Applications/NewTerm.app/
+rm -rf /Applications/iCleaner.app/
 rm -rf /Library/dpkg/
 rm -rf /Library/Cylinder/
 rm -rf /Library/LaunchDaemons/*
