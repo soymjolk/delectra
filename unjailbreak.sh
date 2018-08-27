@@ -4,7 +4,7 @@ if [ "$EUID" -ne 0 ]; then
   exit
 fi
 
-echo "Electra uninstaller by KirovAir for Electra 1.0.x"
+echo "Electra uninstaller by KirovAir and @soymjolk for Electra 1.0.x"
 echo "This has ONLY been tested on a few devices and might kill your JB."
 echo "Assuming you have not installed any other jailbreak or modified the rootfs directly yourself, you should be on stock iOS once this is complete."
 read -p "Press enter to continue. Press Ctrl + C to exit"
@@ -75,7 +75,6 @@ rm -f /usr/lib/SBInject.dylib
 rm -rf /Library/Frameworks/* # This is VERY important to keep the BETAs working
 mkdir /Library/Frameworks/ # Just to be sure
 rm -rf /System/Library/Themes/
-#rm -rf /bootstrap/ # moved to bottom
 rm -rf /Library/Themes/
 rm -f /usr/lib/SBInject.dylib
 rm -rf /Library/MobileSubstrate/*
@@ -500,13 +499,19 @@ echo "255.255.255.255	broadcasthost" >> /etc/hosts
 echo "::1             localhost" >> /etc/hosts
 
 #moved to bottom (from big fat bootstrap)
-echo "Removing last tools and clearing ui cache.."
+echo "Removing last tools and running uicache..."
 uicache
+echo "uicache done!"
 rm -f /usr/bin/uicache
 rm -rf /bootstrap/
 rm -f /bin/sh
 rm -f /bin/rm
 
-echo "All jailbreak related files are removed! (At least all included in the iOS 11 electra JB)"
+echo "Delectra has succeeded! Rebooting in 3 seconds..."
+sleep 1
+echo "2 seconds..."
+sleep 1
+echo "1 seconds..."
+sleep 1
 echo "Rebooting... (Keep praying my friend!)"
 kill 1
