@@ -19,8 +19,8 @@ I followed all filesystem changes from the jailbreak bootstrap files and electra
 This is not recommended by Coolstar or even myself.
 
 ## How to use?
-1. Uninstall ALL __user__ installed packages and tweaks. You can use SemiRestore11-lite for this now!
-2. Put unjailbreak.sh on your phone. I'd recommend putting it in /electra so it will be removed by itself
+1. Uninstall ALL __user__ installed packages and tweaks from Cydia. You can use [SemiRestore11-lite](https://www.redmondpie.com/semirestore-11-lite-for-ios-11-electra-jailbreak-released-here-are-the-details/) for this now!
+2. Put unjailbreak.sh on your phone using SCP thru Terminal or iFunBox. I'd recommend putting it in /electra so it will be removed by itself.
 3. Reboot your device and rejailbreak _without_ tweaks enabled. (This should make the process more stable)
 4. SSH into your phone as __root__ and run unjailbreak.sh from this repo:
 ```
