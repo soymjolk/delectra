@@ -1,4 +1,7 @@
 # delectra
+
+## Using this script is NOT RECOMMENDED! If you'd like to restore, use [Rollectra](https://rollectra.com/) from the Packix repo. unc0ver users can restore their RootFS inside the app.
+
 An uninstaller script for Coolstar's [Electra](https://github.com/coolstar/electra) iOS 11.0 - 11.1.2 jailbreak.
 Please read everything in this readme before you do anything!
 
